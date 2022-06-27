@@ -1,65 +1,64 @@
-@font-face{
+@font-face {
     font-family: "cairoFont";
-    src:url(../fonts/Cairo-Regular.ttf)
+    src: url(../fonts/Cairo-Regular.ttf);
 }
 body {
-    font-family: "cairoFont", Arial, sans-serif;
+   font-family: 'Cairo', sans-serif;
     background-color: #fafafa;
 }
 a {
     color:#000;
-    text-decoration: none !important;  /* bech yetna7a line   */
+    text-decoration: none !important;
 }
-/* button كيفاش تبدل الألوان الإفتراضية متاع 
- في موقع الكل*/
+/*Change the default colors of all buttons on the site*/
 button {
     background-color: transparent !important;
-    color: #bf40bf !important;
-    border-color: #bf40bf !important;
+    color: #428CD4 !important;
+    border-color:#428CD4!important;
 }
-/*كيفاش تبدل الألوان الإفتراضية متاع 
-في موقع وقت تعدي button 
-Cursor على button*/
-
+/*Changes the default colors of all buttons on the site when the mouse pointer is hovered over the button*/
 button:hover {
     color: #fff !important;
-    background-color: #bf40bf !important;
+    background-color:#428CD4 !important;
 }
-/*flex يجب علينا وضع هذه الخاصية للابن "جسم البطاقة" لأن البطاقة لديها قيمة عرض*/
+/* We must set this property to the child "card body" because the card has a display value flex */
 .card-body {
     min-width: 0;
 }
 .card .card-horizontal .card-body p {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    white-space: nowrap;/*Prevent new line descent and just one line*/
+    overflow: hidden;/*Hide all information after the first line*/
+    text-overflow: ellipsis;/*Add the three dots at the end of the sentence*/
 }
-
+/*Change the color of the top menu*/
 #top-menu .bg-light {
     background-color: #fff !important;
 }
-
+/*Circle the site logo icon*/
 #top-menu .video-icon {
-    background-color: #bf40bf;
+    background-color: #428CD4;
     color: #fff;
     border-radius: 15%;
 }
-
+/*Change the color of hyperlinks when hovering over or clicking on the mouse*/
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .active>.nav-link {
     color: #fff;
-    background-color: #bf40bf;
+    background-color:#428CD4;
 }
-
+/*Change the color of the login link*/
 .navbar .login {
-    color: #bf40bf;
+    color: #428CD4;
 }
-
+/* change signal colors x*/
 .modal .modal-header .close:hover {
-    color: #bf40bf !important;
-    background-color: transparent !important;
+    color:transparent!important;
+    background-color:transparent !important;
 }
-
+.modal-header{
+    background-color:#428CD4!important;
+}
+/*Hide the shadow that appears around the search box and buttons when pressed*/
 input.form-control:focus,
 button:focus {
     box-shadow: none !important;
@@ -67,16 +66,16 @@ button:focus {
 .card .card-icons {
     position: relative;
 }
-
+/*Determine the position of the time container*/
 time {
     position: absolute;
     bottom: 10px;
-    left: 7px;
+   left: 7px;
     color: #fff;
     background-color: #000;
     padding: 0px 3px;
 }
-
+/*Determine the position of the play icon*/
 .card .fa-play {
     position: absolute;
     top: 43%;
@@ -86,6 +85,7 @@ time {
 }
 .card:hover .fa-play {
     display: inline;
+    color: #428CD4 ;
 }
 .card:hover {
     transform: translateY(-.9%);
@@ -100,53 +100,53 @@ time {
 #top-menu .fa-bars {
     cursor: pointer;
 }
-
+/*Side Menu Format*/
 .sidebar {
     position: fixed;
     z-index: 4;
     left: -17rem;
     transition: all 0.5s ease-in-out;
-    height: 100%; 
+    height: 100%; /*list length*/
     background-color: #fff;
-    overflow: hidden; 
+    overflow: hidden; /*Hide all items over 100 */
     padding-bottom: 60px;
 }
-
+/*Show scrollbar vertically*/
 .sidebar:hover {
     overflow-y: scroll;
 }
-
+/*Change the colors of the icons in the side menu*/
 .sidebar .purple {
-    color:#bf40bf;
+    color:#428CD4;
 }
-
+/*Change the colors of menu items when the mouse pointer is hovered over the side menu*/
 .sidebar .list-group-item:hover {
     color:#fff;
-    background-color: #bf40bf;
+    background-color: #428CD4;
 }
-
+/*Change the color of the icons also when the mouse pointer is hovered over the side menu*/
 .sidebar .list-group-item:hover .purple {
     color:#fff;
 }
-
+/* Increase the width of the side menu items */
 .sidebar .list-group-item {
     width: 17rem;
 }
-
+/*Hide the side menu on first page load*/
 #wrap.toggled .sidebar {
     left: 0rem;
 }
-
+/*Scroll bar background format*/
 .sidebar::-webkit-scrollbar {
     background: rgb(230,230,230);
     width: 8px;
 }
-
+/*Scrollbar format*/
 .sidebar::-webkit-scrollbar-thumb {
     background: rgb(179,179,179);
     width:8px;
 }
-
+/*black layer*/
 .layer {
     position: fixed;
     height: 100vh;
@@ -157,7 +157,7 @@ time {
     display: none;
 }
 .navbar .search-icon {
-    color: #bf40bf;
+    color: #428CD4;
     cursor: pointer;
     padding: 15px 10px;
     position: absolute;
@@ -167,9 +167,9 @@ time {
 }
 .navbar .search-icon:hover {
     color: #fff;
-    background-color: #bf40bf;
+    background-color:#428CD4;
 }
-
+/*The format of the input field that appears when you press the search icon*/
 .search-input {
     position: fixed;
     top: 72px;
@@ -183,22 +183,22 @@ time {
 .search-input:focus {
     background-color: #efeeee;
 }
-
+/*Delete spaces from the container to extend the search field across the entire screen*/
 .container-fluid {
     padding: 0px;
     overflow: hidden;
 }
 @media (max-width: 1115px) {
-   
+   /*Hide the search field in the top menu*/
     .navbar .collapse .form-inline {
         display: none;
     }
-   
+    /*Show search icon*/
     .navbar .search-icon {
         display: inline;
     }
 }
-
+/*Hide the search field that appears on medium and small screens*/
 @media (min-width: 1115px) {
     .search-input {
         display: none !important;

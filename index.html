@@ -15,14 +15,10 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-3">
           <i class="fa-solid fa-bars fa-lg " id="toggler"></i>
           <b>
-            <a class="navbar-brand" href="index.html">youtube
+            <a class="navbar-brand p-1" href="index.html">youtube
               <span class="video-icon p-1"><i class="fas fa-play-circle"></i></span>
             </a>
           </b>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-lg-auto">
               <li class="nav-item active" tabindex="3">
@@ -36,19 +32,22 @@
               </li>
             </ul>
             <div class="form-inline my-2 my-lg-0">
-              <input class="form-control m-sm-2" type="search" placeholder="recherche">
-              <button  onclick="location.href='search.html';"  class="btn btn-outline-info my-2 my-sm-0 " type="submit">recherche</button>
+              <input class="form-control m-sm-2" type="search" placeholder="chercher">
+              <button  onclick="location.href='search.html';"  class="btn btn-outline-info my-2 my-sm-0 " type="submit">chercher</button>
             </div>
+          </div>
+            <i class="fa-brands fa-searchengin ml-4 search-icon"></i>
             <a class="nav-link login" href="#" data-toggle="modal" data-target="#loginModel">se connecter</a>
           </div>
       </nav>
+      <input type="search" class="form-control search input" placeholder="je cherche">
 
         <!-- Modal -->
         <div class="modal fade" id="loginModel" tabindex="-1">
           <div class="modal-dialog model-dialog-centered">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">se connecter</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Se connecter</h5>
                 <button type="button" class="close" data-dismiss="modal">
                   <span>&times;</span>
                 </button>
@@ -56,12 +55,14 @@
               <div class="modal-body">
                 <form>
                   <div class="form-group">
-                    <label for="email" class="col-form-label">email:</label>
+                    <label for="email" class="col-form-label">Email:  </label>
                     <input type="email" class="form-control" id="email">
+                  </label>
                   </div>
                   <div class="form-group">
-                    <label for="password" class="col-form-label">mot de passe:</label>
+                    <label for="password" class="col-form-label">mot de passe:  </label>
                     <input type="password" class="form-control" id="password">
+                
                   </div>
                 </form>
               </div>
@@ -73,7 +74,7 @@
             </div>
           </div>
         </div>
- <div class="row pt-4">
+ <div class="row pt-2">
   <div id="wrap">
       <div class="sidebar">
         <ul class="list-group list-group-flush pl-0">
@@ -85,13 +86,13 @@
                       <a href="index.html" class="list-group-item list-group-item-action">
                           <i class="fab fa-algolia mr-2 purple"></i> Vidéos suggérées
                       </a>
-                      <a href="#" class="list-group-item list-group-item-action">
+                      <a href="log.html" class="list-group-item list-group-item-action">
                           <i class="far fa-plus-square mr-2 purple"></i> nouvellement téléchargé
                        </a>
-                      <a href="#" class="list-group-item list-group-item-action">
+                      <a href="watch.html" class="list-group-item list-group-item-action">
                           <i class="fas fa-fire-alt mr-2 purple"></i>enregistrement
                       </a>
-                      <a href="#" class="list-group-item list-group-item-action">
+                      <a href="search.html" class="list-group-item list-group-item-action">
                         <i class="fa-solid fa-video purple"></i> vidéos
                       </a>
                       <a href="#" class="list-group-item list-group-item-action">
@@ -121,7 +122,7 @@
   </div>
 </div>
         <div class="content">
-          <h4 class="py-4 px-4">Vidéos suggérées</h4>
+          <h4 class="py-2 px-5">Vidéos suggérées</h4>
           <div class="row px-5">
             <div class="col-sm-6 col-md-4 col-lg-3">
               <div class="card mb-4 p-1">
@@ -139,13 +140,13 @@
                 </a>
                 <div class="card-footer">
                   <small class="text-muted">
-                    <span class="d-block"><i class="fas fa-film"></i>3K vues</span>
-                    <i class="fas fa-clock"></i> <span>avant 9 mois</span>
+                    <i class="fas fa-film"></i> <span>3k vues</span>
+                    <i class="fas fa-clock"></i> <span>avant 4 mois</span>
                   </small>
                 </div>
                 <a href="channel.html" class="channel-img">
-                  <img src="img/imgl.png" alt="channel image" class="rounded-circle my-2 ml-3" width="30">
-                  <span class="card-text">Pingucoder</span>
+                  <img src="img/img111.png" alt="channel image" class="rounded-circle my-2 ml-3" width="30">
+                  <span class="card-text">Jihen Rayssi</span>
                 </a>
               </div>
             </div>
@@ -170,8 +171,8 @@
                   </small>
                 </div>
                 <a href="channel.html" class="channel-img">
-                  <img src="img/imgl.png" alt="channel image" class="rounded-circle my-2 ml-3" width="30">
-                  <span class="card-text">Pingucoder</span>
+                  <img src="img/img111.png" alt="channel image" class="rounded-circle my-2 ml-3" width="30">
+                  <span class="card-text">Jihen Rayssir</span>
                 </a>
               </div>
             </div> <div class="col-sm-6 col-md-4 col-lg-3">
@@ -195,8 +196,8 @@
                   </small>
                 </div>
                 <a href="channel.html" class="channel-img">
-                  <img src="img/imgl.png" alt="channel image" class="rounded-circle my-2 ml-3" width="30">
-                  <span class="card-text">Pingucoder</span>
+                  <img src="img/img111.png" alt="channel image" class="rounded-circle my-2 ml-3" width="30">
+                  <span class="card-text">Jihen Rayssi</span>
                 </a>
               </div>
             </div> <div class="col-sm-6 col-md-4 col-lg-3">
@@ -220,22 +221,22 @@
                   </small>
                 </div>
                 <a href="channel.html" class="channel-img">
-                  <img src="img/imgl.png" alt="channel image" class="rounded-circle my-2 ml-3" width="30">
-                  <span class="card-text">Pingucoder</span>
+                  <img src="img/img111.png" alt="channel image" class="rounded-circle my-2 ml-3" width="30">
+                  <span class="card-text">Jihen Rayssi</span>
                 </a>
               </div>
             </div> <div class="col-sm-6 col-md-4 col-lg-3"> 
               <div class="card mb-4 p-1">
                 <div class="card-icons">
                   <a href="watch.html">
-                    <img src="img/img6.png" class="card-img-top" alt="card image">
+                    <img src="img/img11.png" class="card-img-top" alt="card image">
                       <time>11:42</time>
                       <i class="fas fa-play fa-2x"></i>
                   </a>
               </div>
                 <a href="watch.html">
                   <div class="card-body p-0">
-                    <p class="card-title">Apprendre à coder en pyrhon</p>
+                    <p class="card-title">Apprendre à coder en PHP</p>
                   </div>
                 </a>
                 <div class="card-footer">
@@ -245,8 +246,8 @@
                   </small>
                 </div>
                 <a href="channel.html" class="channel-img">
-                  <img src="img/imgl.png" alt="channel image" class="rounded-circle my-2 ml-3" width="30">
-                  <span class="card-text">Pingucoder</span>
+                  <img src="img/img111.png" alt="channel image" class="rounded-circle my-2 ml-3" width="30">
+                  <span class="card-text">Jihen Rayssi</span>
                 </a>
               </div>
             </div> <div class="col-sm-6 col-md-4 col-lg-3">
@@ -270,8 +271,8 @@
                   </small>
                 </div>
                 <a href="channel.html" class="channel-img">
-                  <img src="img/imgl.png" alt="channel image" class="rounded-circle my-2 ml-3" width="30">
-                  <span class="card-text">Pingucoder</span>
+                  <img src="img/img111.png" alt="channel image" class="rounded-circle my-2 ml-3" width="30">
+                  <span class="card-text">Jihen Rayssi</span>
                 </a>
               </div>
             </div> <div class="col-sm-6 col-md-4 col-lg-3">
@@ -295,8 +296,8 @@
                   </small>
                 </div>
                 <a href="channel.html" class="channel-img">
-                  <img src="img/imgl.png" alt="channel image" class="rounded-circle my-2 ml-3" width="30">
-                  <span class="card-text">Pingucoder</span>
+                  <img src="img/img111.png" alt="channel image" class="rounded-circle my-2 ml-3" width="30">
+                  <span class="card-text">Jihen Rayssi</span>
                 </a>
               </div>
             </div> <div class="col-sm-6 col-md-4 col-lg-3">
@@ -320,8 +321,8 @@
                   </small>
                 </div>
                 <a href="channel.html" class="channel-img">
-                  <img src="img/imgl.png" alt="channel image" class="rounded-circle my-2 ml-3" width="30">
-                  <span class="card-text">Pingucoder</span>
+                  <img src="img/img111.png" alt="channel image" class="rounded-circle my-2 ml-3" width="30">
+                  <span class="card-text">Jihen Rayssi</span>
                 </a>
               </div>
             </div> <div class="col-sm-6 col-md-4 col-lg-3">
@@ -345,8 +346,8 @@
                   </small>
                 </div>
                 <a href="channel.html" class="channel-img">
-                  <img src="img/imgl.png" alt="channel image" class="rounded-circle my-2 ml-3" width="30">
-                  <span class="card-text">Pingucoder</span>
+                  <img src="img/img111.png" alt="channel image" class="rounded-circle my-2 ml-3" width="30">
+                  <span class="card-text">Jihen Rayssi</span>
                 </a>
               </div>
             </div> <div class="col-sm-6 col-md-4 col-lg-3">
@@ -370,15 +371,15 @@
                   </small>
                 </div>
                 <a href="channel.html" class="channel-img">
-                  <img src="img/imgl.png" alt="channel image" class="rounded-circle my-2 ml-3" width="30">
-                  <span class="card-text">Pingucoder</span>
+                  <img src="img/img111.png" alt="channel image" class="rounded-circle my-2 ml-3" width="30">
+                  <span class="card-text">Jihen Rayssi</span>
                 </a>
               </div>
             </div> <div class="col-sm-6 col-md-4 col-lg-3">
               <div class="card mb-4 p-1">
                 <div class="card-icons">
                   <a href="watch.html">
-                    <img src="img/node js.jpg" class="card-img-top" alt="card image">
+                    <img src="img/node.js" class="card-img-top" alt="card image">
                       <time>13:42</time>
                       <i class="fas fa-play fa-2x"></i>
                   </a>
@@ -395,8 +396,8 @@
                   </small>
                 </div>
                 <a href="channel.html" class="channel-img">
-                  <img src="img/imgl.png" alt="channel image" class="rounded-circle my-2 ml-3" width="30">
-                  <span class="card-text">Pingucoder</span>
+                  <img src="img/img111.png" alt="channel image" class="rounded-circle my-2 ml-3" width="30">
+                  <span class="card-text">Jihen Rayssi</span>
                 </a>
               </div>
             </div> <div class="col-sm-6 col-md-4 col-lg-3">
@@ -420,8 +421,8 @@
                   </small>
                 </div>
                 <a href="channel.html" class="channel-img">
-                  <img src="img/imgl.png" alt="channel image" class="rounded-circle my-2 ml-3" width="30">
-                  <span class="card-text">Pingucoder</span>
+                  <img src="img/img111.png" alt="channel image" class="rounded-circle my-2 ml-3" width="30">
+                  <span class="card-text">Jihen Rayssi</span>
                 </a>
               </div>
             </div>
